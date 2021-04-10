@@ -16,8 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="AgainServer"
-run/main_scene="res://Server.tscn"
+run/main_scene="res://src/Server/Server.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1000
+window/size/resizable=false
 
 [mono]
 

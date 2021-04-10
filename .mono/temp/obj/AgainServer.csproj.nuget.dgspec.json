@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\godotGames\\AgainServer\\AgainServer.csproj": {}
+    "C:\\Users\\Domingues Raphaël\\Desktop\\GameWork\\AgainServer\\AgainServer.csproj": {}
   },
   "projects": {
-    "E:\\godotGames\\AgainServer\\AgainServer.csproj": {
+    "C:\\Users\\Domingues Raphaël\\Desktop\\GameWork\\AgainServer\\AgainServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\godotGames\\AgainServer\\AgainServer.csproj",
+        "projectUniqueName": "C:\\Users\\Domingues Raphaël\\Desktop\\GameWork\\AgainServer\\AgainServer.csproj",
         "projectName": "AgainServer",
-        "projectPath": "E:\\godotGames\\AgainServer\\AgainServer.csproj",
-        "packagesPath": "C:\\Users\\toto-\\.nuget\\packages\\",
-        "outputPath": "E:\\godotGames\\AgainServer\\.mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\Domingues Raphaël\\Desktop\\GameWork\\AgainServer\\AgainServer.csproj",
+        "packagesPath": "C:\\Users\\Domingues Raphaël\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Domingues Raphaël\\Desktop\\GameWork\\AgainServer\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\toto-\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Domingues Raphaël\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net472"

@@ -6,3 +6,11 @@ E:\godotGames\AgainServer\.mono\temp\obj\Debug\AgainServer.AssemblyInfo.cs
 E:\godotGames\AgainServer\.mono\temp\obj\Debug\AgainServer.csproj.CoreCompileInputs.cache
 E:\godotGames\AgainServer\.mono\temp\obj\Debug\AgainServer.dll
 E:\godotGames\AgainServer\.mono\temp\obj\Debug\AgainServer.pdb
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\bin\Debug\AgainServer.dll
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\bin\Debug\AgainServer.pdb
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\obj\Debug\AgainServer.csprojAssemblyReference.cache
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\obj\Debug\AgainServer.AssemblyInfoInputs.cache
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\obj\Debug\AgainServer.AssemblyInfo.cs
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\obj\Debug\AgainServer.csproj.CoreCompileInputs.cache
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\obj\Debug\AgainServer.dll
+C:\Users\Domingues Raphaël\Desktop\GameWork\AgainServer\.mono\temp\obj\Debug\AgainServer.pdb
