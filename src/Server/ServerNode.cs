@@ -11,7 +11,7 @@ public class ServerNode : Node
     private int MAX_PLAYERS;
 
     private List<Player_Info> playersInfo = new List<Player_Info>();
-    private NetworkedMultiplayerENet network = new NetworkedMultiplayerENet();
+    private NetworkedMultiplayerENet network;
 
     private bool serverIsRunning = false;
 
@@ -29,13 +29,20 @@ public class ServerNode : Node
         network.CloseConnection();
         serverIsRunning = false;
         DisplayTextOnServerTerminal("Server Stopped", redColor);
+        DisplayTextOnPlayerInfosTerminal("");
+        playersList = new List<string>();
     }
 
     private void InitServer() {
+        network = new NetworkedMultiplayerENet();
         network.CreateServer(SERVER_PORT, MAX_PLAYERS);
         GetTree().NetworkPeer = network;
-        GetTree().Connect("network_peer_connected", this, "_player_connected");
-        GetTree().Connect("network_peer_disconnected", this, "_player_disconnected");
+        if (!(GetTree().IsConnected("network_peer_connected", this, "_player_connected"))) {
+            GetTree().Connect("network_peer_connected", this, "_player_connected");
+        }
+        if (!(GetTree().IsConnected("network_peer_disconnected", this, "_player_disconnected"))) {
+            GetTree().Connect("network_peer_disconnected", this, "_player_disconnected");
+        }
         serverIsRunning = true;
         DisplayTextOnServerTerminal("Server Running", greenColor);
     }
