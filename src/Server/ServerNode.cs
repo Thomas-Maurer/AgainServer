@@ -30,7 +30,7 @@ public class ServerNode : Node
         serverIsRunning = false;
         DisplayTextOnServerTerminal("Server Stopped", redColor);
         DisplayTextOnPlayerInfosTerminal("");
-        playersList = new List<string>();
+        RemoveAllPlayerFromList();
     }
 
     private void InitServer() {
@@ -120,19 +120,23 @@ public class ServerNode : Node
         MAX_PLAYERS = (int) configFile.GetValue("server", "MAX_PLAYERS", 5);
     }
 
+    // INTERFACE
     private void ToggleServerButton() {
         RetrieveStartServerButtonNode().Visible = !serverIsRunning;
         RetrieveStopServerButtonNode().Visible = serverIsRunning;
     }
 
+    // INTERFACE
     private void DisplayTextOnServerTerminal(string text, Color color = new Color()) {
         DisplayTextOnTerminal("- " + text,  RetrieveServerTerminal(), color);
     }
 
+    // INTERFACE
     private void DisplayTextOnPlayerInfosTerminal(string text, Color color = new Color()) {
         DisplayTextOnTerminal(text, RetrievePlayerInfosTerminal(), color, true);
     }
 
+    // INTERFACE
     private void DisplayTextOnTerminal(string text, RichTextLabel node, Color color = new Color(), Boolean overrided = false) {
         if (color == new Color()) {
             color = whiteColor;
@@ -146,11 +150,20 @@ public class ServerNode : Node
         }
     }
 
+    // INTERFACE
     private void AddNewPlayerToList(string playerId) {
         RetrievePlayerListNode().AddItem(playerId);
         playersList.Add(playerId);
     }
 
+    // INTERFACE
+    private void RemoveAllPlayerFromList() {
+        for (int index = playersList.Count - 1; index >=0; index--) {
+            RemovePlayerFromList(playersList[index]);
+        }
+    }
+
+    // INTERFACE
     private void RemovePlayerFromList(string playerId) {
         RetrievePlayerListNode().RemoveItem(playersList.IndexOf(playerId));
         playersList.RemoveAt(playersList.IndexOf(playerId));
