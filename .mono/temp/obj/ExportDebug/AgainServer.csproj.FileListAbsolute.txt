@@ -1,8 +1,0 @@
-E:\godotGames\AgainServer\.mono\temp\bin\ExportDebug\AgainServer.dll
-E:\godotGames\AgainServer\.mono\temp\bin\ExportDebug\AgainServer.pdb
-E:\godotGames\AgainServer\.mono\temp\obj\ExportDebug\AgainServer.csprojAssemblyReference.cache
-E:\godotGames\AgainServer\.mono\temp\obj\ExportDebug\AgainServer.AssemblyInfoInputs.cache
-E:\godotGames\AgainServer\.mono\temp\obj\ExportDebug\AgainServer.AssemblyInfo.cs
-E:\godotGames\AgainServer\.mono\temp\obj\ExportDebug\AgainServer.csproj.CoreCompileInputs.cache
-E:\godotGames\AgainServer\.mono\temp\obj\ExportDebug\AgainServer.dll
-E:\godotGames\AgainServer\.mono\temp\obj\ExportDebug\AgainServer.pdb
