@@ -27,6 +27,12 @@ public class Server : Node
     }
 
     public void _player_disconnected(int id) {
+        foreach (Player_Info player in playersInfo)
+        {
+            if(player.getNodeId() != id) {
+                RpcId(player.getNodeId(), "deSpawnPlayer", id);
+            }
+        }
         GD.Print("Player Disconnected to server " + id.ToString());
     }
 
@@ -39,7 +45,7 @@ public class Server : Node
         GD.Print("Get info from server before Launching the game.");
         var playerId = GetTree().GetRpcSenderId();
         this.sendCurrentPlayers(requester);
-        RpcId(playerId, "allDataRetrievedFromServer", requester);
+        //RpcId(playerId, "allDataRetrievedFromServer", requester);
     }
 
     [Remote]
