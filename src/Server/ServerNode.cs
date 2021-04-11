@@ -56,6 +56,12 @@ public class ServerNode : Node
     public void _player_disconnected(int id) {
         DisplayTextOnServerTerminal("Player Disconnected to server " + id.ToString());
         RemovePlayerFromList(id.ToString());
+        foreach (Player_Info player in playersInfo)
+        {
+            if(player.getNodeId() != id) {
+                RpcId(player.getNodeId(), "deSpawnPlayer", id);
+            }
+        }
         DisplayTextOnPlayerInfosTerminal("");
     }
 
